@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="../OrderDetailsController" method="post">
+            <input type="hidden" name="service" value="insertOrderDetails"/>
+            <table>
+                <caption>Insert Order Details</caption>
+                <tr>
+                    <td><label for="OrderID">OrderID</label></td>
+                    <td><select name="OrderID" id="OrderID">
+                        <option value="10248">10248</option>
+                        <option value="10249">10249</option>
+                        <option value="10250">10250</option>
+                        <option value="10251">10251</option>
+                        <option value="10252">10252</option>
+                    </select>
+                </td>
+                </tr>
+                <tr>
+                    <td><label for="ProductID">ProductID</label></td>
+                    <td><select name="ProductID" id="ProductID">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+                </tr>
+                <tr>
+                    <td><label for="UnitPrice">UnitPrice</label></td>
+                    <td><input type="text" name="UnitPrice" id="UnitPrice"></td>
+                </tr>
+                <tr>
+                    <td><label for="Quantity">Quantity</label></td>
+                    <td><input type="text" name="Quantity" id="Quantity"></td>
+                </tr>
+                <tr>
+                    <td><label for="Discount">Discount</label></td>
+                    <td><input type="text" name="Discount" id="Discount"></td>
+                </tr>
+                <tr>
+                    <td><label for="OrderDetailStatus">OrderDetailStatus</label></td>
+                    <td><input type="text" name="OrderDetailStatus" id="OrderDetailStatus"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="insertOrderDetails" name="submit"></td>
+                    <td><input type="reset" value="Clear"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

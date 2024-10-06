@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <form action="../TerritoriesURL" method="post">
+                <input type="hidden" name="service" value="insertTerritorie">
+                <table>
+                    <caption>Insert Territorie</caption>
+                    <tr>
+                        <td><label for="TerritoryID">TerritoryID</label></td>
+                        <td><input type="text" name="TerritoryID" id="TerritoryID"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="TerritoryDescription">TerritoryDescription</label></td>
+                        <td><input type="text" name="TerritoryDescription" id="TerritoryDescription"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="RegionID">RegionID</label></td>
+                        <td>
+                            <select name="RegionID" id="RegionID">
+                                <option value="1">Eastern</option>
+                                <option value="1">Western</option>
+                                <option value="1">Norther</option>
+                                <option value="1">Southern</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" name="submit" value="insertTerritorie"></td>
+                        <td><input type="reset" value="clear"></td>
+                    </tr>
+                </table>
+            </form>
+
+
+        </div>
+    </body>
+</html>
